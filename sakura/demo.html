@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>樱花飘落动画</title>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/snowfall.jquery.js"></script>
+		<style>
+			html,body{padding:0;margin:0;}
+			.darkBg{background:#3a3a3a;}
+			*{margin:0;padding:0;}
+			body{background-color:#FFF;}
+			.snowfall-flakes{animation:sakura 1s linear 0s infinite;}
+			@keyframes sakura{
+				0% {transform:rotate3d(0, 0, 0, 0deg);}
+				25%{transform:rotate3d(1, 1, 0, 60deg);}
+				50%{transform:rotate3d(1, 1, 0, 0deg);}
+				75%{transform:rotate3d(1, 0, 0, 60deg);}
+				100% {transform:rotate3d(1, 0, 0, 0deg);}
+			}
+		</style>
+	</head>
+	<body class="darkBg">
+		<script type='text/javascript'>
+		$(document).ready(function(){
+			$(document).snowfall({image:"./js/img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+            $(document).snowfall({image:"./js/img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+            $(document).snowfall({image:"./js/img/2.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+            $(document).snowfall({image:"./js/img/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:15,});
+		});
+		</script>
+		
+	</body>
+</html>
